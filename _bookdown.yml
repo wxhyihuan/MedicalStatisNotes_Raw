@@ -1,0 +1,5 @@
+book_filename: "MedicalStatisNotes"
+language:
+  ui:
+    chapter_name: !expr function(i) paste(' ')
+delete_merged_file: true

@@ -1,0 +1,717 @@
+# 第八章 秩转换的非参数检验
+
+日期: 2020-11-29
+作者：wxhyihuan
+
+非参数检验(Nonparametric test)是相对于参数检验(Parametric test)而言的。如果总体分布为已知的数学形式，
+**对其总体参数作假设检验**称为参数检验。本书前面介绍的计量资料的对正态总体均数作假设检验的1检验和F检验就为
+参数检验。但当总体分布不能由已知的数学形式表达、没有总体参数时，也就谈不上参数检验了。若两个或多个正
+态总体方差不等，也不能对其总体均数进行1检验或F检验的参数检 验。对于计量资料，不满足参数检验条件的假设
+检验方法，一是可尝试变量变换使其满足参数检验条件， 但有时达不到目的;二是用非参数检验。对于等级资料，
+常用非参数检验。
+
+非参数检验对总体分布不作严格假定，又称任意分布检验(Distribution-free test)，它直接**对总体分布的位置是否相同作假设检验**。
+非参数检验的优点是它不受总体分布的限制，适用范围广。其中**秩转换(Rank transformation)的非参数检验**，
+是推断一个总体表达分布位置的*中位数*M(非参数)和已知$M_0$、两个或多个总体的分布是否有差别。秩转换的非参数
+检验是先将数值变量资料从小到大，或等级资料从弱到强转换成秩后，再计算检验统计量，其特点是假设检验的
+结果对总体分布的形状差别不敏感，只对总体分布的位 置差别敏感。
+
+关于参数检验与非参数校验的比较可以参考知乎上的一篇[《非参数检验思路总结》](https://zhuanlan.zhihu.com/p/93196547)。
+
+对于计量资料，若满足正态和方差齐性条件，这时小样本资料选检验或F检验是不妥的，更适合采用秩转换的非参数检验；
+对于分布不知是否正态的小样本资料，为保险起见，宜选秩转换的非参数检验；对于一端或两端是不确定数值
+(如<0.5、5.0 等)的资料，不管是否正态分布，只能选秩转换的非参数 检验。对于等级资料，若选行x列表资料的$\chi^2$检验，只
+能推断构成比差别，而选秩转换的非参数检验，可推断等级强度差别。如果已知计量资料满足(或近似满足) 检验或F检验条件，当然选检验或F检验， 因为这时若选秩转换的非参数检验，会降低检验效能。
+
+符号秩本身代表一种类型的数据转换，即将实验数据先转化成符号秩。 当一组数据符号秩求和该总和用作检验统计量。 符号秩检验是一种**具有对称的类似正态的分布，是离散分布的而f非连续分布**。
+
+***
+
+1. <b>什么是 对总体分布的**位置**是否相同作假设检验?</b>
+
+这里的“位置”应该是是指反应分布特征的位置参数，即均值和中位数，其他的位置参数如众数，四分位等一般难以反映整体，因此用的比较少。
+一般均值和中位数代表数据集的中心点。
+
+2. <b>为什么是<font color="red">中位数</font>不是<font color="red">均值</font>?又或者为什么不是其他非参数内的参数呢??</b>
+
+首先，这里需要回答一下，什么是参数累和会参数累位置参数？均值这一类位置参数由于在计算时，会受到样本容量n的大小影响，及计算公式中涉及到样本容量这个变化的参数，因此是属于[参数]类。而中位数，百分位数，
+在计算是没有其以来其他参数，直接给予数据本身就可以计算出来，因此是参数类。
+
+其次，在逻辑上我们通常回去寻找数据的中心(这样可以尽量保证统计的稳健性和有效性)，最俱代表性的的是中位数。实际上，均值是数据呈对称分布时的中位数；而在数据分布有偏移时，中位数则一般不同于均数，
+使用中位数更能代表数据中心，这也是相比众数，4分位等非参数分布参数的优势。
+
+最后，也有路径依赖的原因，因为早期很多数据都被假设是符合正态的，或者是近似符合正太分布的，可能那时候因为计算受限，
+这样的假设处理比较方便而且能解决大部分情况。均值计算起来更加方便快捷，百分位数则需要对所有数据排序，然后再计算。
+
+***
+
+R 语言中的主要函数有：
+
+1. Wilcoxon符号秩检验，Wilcoxon Signed Rank Statistic的[dsignrank(),psignrank(),qsignrank(),rsignrank()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/SignRank)
+   
+2. Wilcoxon符号秩和检验，Wilcoxon Rank Sum Statistic的 [dwilcox(),pwilcox(),qwilcox()和rwilcox()](https://www.rdocumentation.org/link/pwilcox?package=stats&version=3.6.2)
+   
+3. 相应的检验函数有[wilcox.test()](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/wilcox.test)。
+
+## Wilcoxon符号秩检验
+
+Wilcoxon符号秩检验(Wilcoxon singed-rank test)可用于单样本中位数和总体中位数比较，还可用于配对样本差值的中位数和0比较。
+
+### Wilcoxon符号秩检验的原理与过程
+
+**单组样本与总体的中位数的Wilcoxon符号秩检验**
+
+为了推断样本说来自的总体中位数M与某个已知的总体的中位数$M_0$是否有差别。用样本变量和$M_0$的差值，来推断差值的总体位置值和0是否有差别。比如一个样本容量为n的$X$变量，观察的值为$x_1,x_2,x_3,\dots,x_n,$；假设要将$X$变量代表的总体与已知位置值$M_0=m$的总体进行比较的过程如下：
+
+1. 计算X中观察值与m的差值，即$d_i=x_i-m，Sgn_i=Sgn(d_i)，i\in[1,n]$；
+   - 如果$x_i>m$，对应的对$d_i>0$，*秩符号*为1，即Sgn_i=Sgn(d_i)=1
+   - 如果$x_i=m$，对应的对$d_i=0$，*秩符号*为0，即Sgn_i=Sgn(d_i)=0
+   - 如果$x_i<m$，对应的对$d_i<0$，*秩符号*为-1，即Sgn_i=Sgn(d_i)=-1
+2. 将样本变换为带符号的秩向量，即对$|d_i|$按从小到大进行排序，$|d_i|$排序后的秩(即排序值)记作$R_i$。这里要注意过滤$d_i=0$(秩符号为0)的数据，同时，**对应的样本量n会发生相应的减少为n'**。
+3. 原始向量值的*有符号秩*为$R_i*Sgn_i，i\in[1,n]$，
+
+**配对样本比较的Wilcoxon符号秩检验**
+
+实验样本中配对组之间的差异也代表一个数据向量，这就是为什么使用基于符号秩(Signed Rank Statistic)检验而不是符号秩和检验(Rank Sum Statistic)。
+
+为了推断配对的两个相关样本说来自的两个总体中位数是否有差别。比如两个容量为n的配对样本$X\text{与}Y$变量，观察的值为$x_1,x_2,x_3,\dots,x_n,$和$y_1,y_2,y_3,\dots,y_n,$；这里将$X\text{与}Y$的差值与0进行检验，判断是否有差别。
+
+1. 计算X中观察值与m的差值，即$d_i=x_i-y_i，Sgn_i=Sgn(d_i)，i\in[1,n]$；
+   - 如果$d_i>0$，*秩符号*为1，即Sgn_i=Sgn(d_i)=1
+   - 如果$d_i=0$，*秩符号*为0，即Sgn_i=Sgn(d_i)=0
+   - 如果$d_i<0$，*秩符号*为-1，即Sgn_i=Sgn(d_i)=-1
+2. 将样本变换为带符号的秩向量，即对$|d_i|$按从小到大进行排序，$|d_i|$排序后的秩(即排序值)记作$R_i$。这里要注意过滤$d_i=0$(秩符号为0)的数据，同时，**对应的样本量n会发生相应的减少为n'**。
+3. 原始向量值的*有符号秩*为$R_i*Sgn_i，i\in[1,n]$。
+
+需要注意的是，有的时候会出现计算的差值绝对值相同，即相同秩(Ties)的情况，这种情况一般是取秩的平均数(ties.method="average")，有的也可能选择其他方式。
+
+**Wilcoxon符号秩检验的统计量**
+
+单样本和配对样本的符号秩检验统计量的计算方式一样的，但是不同软件对这个统计量的定义略有差异，主要有两种情况：
+
+1. 按照正秩和负秩()两个值分别计算计算的情况如下：
+
+正秩：
+$$V_{>0}=\sum_i^{n'}R_i*Sgn_i，Sgn_i>0$$
+负秩：
+$$V_{<0}=|\sum_i^{n'}R_i*Sgn_i|，Sgn_i<0$$
+
+它具有从V=0的最小值到最大值V=n'(n'+1)/2的对称分布，因此在计算P值时候，计算正秩/负秩的效果是一样的，但仍然需要注意时单侧还是双侧检验的使用环境。
+
+2. 按照[总符号秩](https://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test)计算的情况如下：
+总秩：
+$$W=\sum_i^{n'}R_i*Sgn_i$$
+
+R语言中自带工具函数针对非独立的样本之间的比较采用的是第一种统计量V；针对独立样品组之间比较时，采用了第二种统计量W。
+
+### 单组样本与总体的中位数的Wilcoxon符号秩检验
+
+这里以案例8-2的数据进行测试，设置的原假设$H_0:$尿氟含量的总体中位数M=45.30；备择假设$H_1:$M>43.5，是单侧检验；
+
+```r 
+library("memisc")
+library("kableExtra")
+#读取数据
+urine<-c(44.21,45.30,46.39,49.47,51.05,53.16,53.26,54.37,57.16,67.37,71.05,87.37)
+m0<-45.30
+
+diff_val<-urine-m0
+diff_no0<-diff_val[which(diff_val != 0)]
+abs_diff_val<-abs(diff_no0)
+rank_vals<-rank(abs_diff_val)
+sum_plusrank<-sum(rank_vals[which(diff_no0 > 0)])
+sum_minusrank<-sum(rank_vals[which(diff_no0 < 0)])
+n_1<-length(diff_no0)
+barplot(diff_no0,col="dark gray",xlab="Difference in Likert",ylab="Frequency")
+psignrank(sum_plusrank,n_1,low.tail=F)
+# [1] 0.0004882812
+wilcox.test(serum_df$原法,serum_df$新法,mu=45.3,paired = T,alternative = c("less"),exact=T,correct = F)
+#  	Wilcoxon signed rank exact test
+#  
+#  data:  serum_df$原法 and serum_df$新法
+#  V = 1, p-value = 0.0004883
+#  alternative hypothesis: true location shift is less than 45.3
+
+wilcox.test(serum_df$原法,serum_df$新法,mu=45.3,paired = T,alternative = c("less"),exact=F,correct = T)
+##  	Wilcoxon signed rank test with continuity correction
+##  
+##  data:  serum_df$原法 and serum_df$新法
+##  V = 1, p-value = 0.001632
+##  alternative hypothesis: true location shift is less than 45.3
+
+```
+根据计算结果，p值<0.05，因此拒绝原假设$H_0$，接受$H_1$，可以认为工人的尿氟比正常人的尿氟含量高。
+
+### 配对样本差值的中位数和0比较
+
+这里以案例8-1的数据进行测试，设置的原假设$H_0:$两组数据的差值中位数等于0；备择假设$H_1:$两组数据的差值中位数不等于0，是双侧检验；
+
+```r 
+library("dplyr")
+library("memisc")
+library("kableExtra")
+#读取数据
+serum<-spss.system.file("ExampleData/SavData4MedSta/Exam08-01.sav")
+serum_df<-as.data.frame(as.data.set(serum))
+
+# 1 计算两种方法的差值
+diff_val<-serum_df[,1]-serum_df[,2]
+# 2 省略diff_val中为0的对子数(网上的一些有的方法可能没有这一步),并计算差值的绝对值
+diff_no0<-diff_val[which(diff_val != 0)]
+abs_diff_val<-abs(diff_no0)
+# 3 使用rank()函数计算差值绝对值的秩
+rank_vals<-rank(abs_diff_val)
+# 4 取正秩和或者负秩和
+sum_plusrank<-sum(rank_vals[which(diff_no0 > 0)])
+sum_minusrank<-sum(rank_vals[which(diff_no0 < 0)])
+# 5 确定有效对子数，即差值不为0的对子数, n
+n_1<-length(diff_no0)
+
+#这里可以预先查看一下diff_no0的数据状况
+barplot(diff_no0,col="dark gray",xlab="Difference in Likert",ylab="Frequency")
+
+##使用psignrank()计算P值，需要注意的是符号秩时会连续分布，因此针对11.5/54.5这样的小鼠，在计算P值是否需要注意左侧右侧的边际问题
+psignrank(sum_plusrank,n_1)+psignrank(sum_minusrank,n_1,lower.tail = F)
+# [1] 0.0546875
+psignrank(sum_plusrank,n_1)*2
+# [1] 0.06738281
+psignrank(sum_minusrank,n_1,lower.tail = F)*2
+# [1] 0.04199219
+
+##或者使用wilcox.test()函数工具，对于N小于20的样本，一般采用exact=T计算
+##paired = T 说明是配对组，配对要求xy的长度必须一致
+wilcox.test(serum_df$原法,serum_df$新法,mu=0,paired = T,alternative = c("two.sided"),exact=T,correct = F)
+## 	Wilcoxon signed rank test
+## 
+## data:  serum_df$原法 and serum_df$新法
+## V = 11.5, p-value = 0.05581
+## alternative hypothesis: true location shift is not equal to 0
+## 
+## Warning messages:
+## 1: In wilcox.test.default(serum_df$原法, serum_df$新法, mu = 0, paired = T,  :
+##   无法精確計算带连结的p值
+## 2: In wilcox.test.default(serum_df$原法, serum_df$新法, mu = 0, paired = T,  :
+##   有0时无法計算精確的p值
+
+wilcox.test(serum_df$原法,serum_df$新法,mu=0,paired = T,alternative = c("two.sided"),exact=F,correct = T)
+## 	Wilcoxon signed rank test with continuity correction
+## 
+## data:  serum_df$原法 and serum_df$新法
+## V = 11.5, p-value = 0.06175
+## alternative hypothesis: true location shift is not equal to 0
+
+```
+根据计算结果，p值>0.05，因此不拒绝原假设$H_0$，即还不能认为两种方法有差异。
+
+
+#### 配对的等级资料的中位数和0比较
+
+符号秩检验若用于配对的等级资料，则先把等级从弱到强转换成秩(1， 2，3，…)；然后求各对秩的差值，省略所有差值为0的对子数，
+令余下的有效对子数为;最后按n个差值编正秩和负秩，求正秩和或负 秩和。但对于等级资料，相同秩多，
+小样本的检验结果会存在偏性，最好用大样本。
+
+<font color="red">此处的R代码待后续有合适的测试数据再补充。</font>
+
+#### 正态近似法
+
+对于n>50的情况，根据中心极限定理，可以采用正态近似法做$u$检验，按照下式计算u值：
+$$u=\frac{T-n(n+1)/4}{\sqrt{\frac{n(n+1)(2n+1)}{24}-\frac{\sum(t_j^3-t_j)}{48}}}$$
+其中$t_j(j=1,2,...)$为第j个相同秩的个数，T即为按照符号秩计算的统计量。
+
+<font color="red">此处的R代码待后续有合适的测试数据再补充。</font>
+
+## Wilcoxon秩和检验
+
+Wilcoxon 秩和检验(Wilcoxon rink sum test)，用于推断计量资料或等级资料的**两个独立样本**所来自的
+两个总体分布是否有差别。
+
+在理论上检验假设$H_0$应为两个总体分布相同，即两个样本来自同一总体。由 于秩和检验对两个总体分布的形状差别不敏感，
+对于**位置**相同、形状不同但类似的两个总体分布，如均数 相等、方差不等的两个正态分布，推断不出两个总体分布(形状)
+有差别，故对立的各择假设$H_1$不能为两 个总体分布不同，而只能为两个总体分布位置不同(对单侧检验可写作某个
+总体分布位置比另一个总体分 布位置要右或要左一些)。考虑到对方差不等、即总体分布不同的两个正态分布，可用秩
+和检验来推断两 个总体分布位置是否有差别，故在实际应用中检验假设$H_0$可写作两个总体分布位置相同。总之，不管两
+个总体分布的形状有无差别，**秩和检验的目的是推断两个总体分布的位置是否有差别，这正是实践中所需要的**，
+如要推断两个不同人群的某项指标值的大小是否有差别或哪个人群的大，可用其指标值分布的位置差别反映，
+而不关心其指标值分布的形状有无差别。两个总体分布位置相同或不同，实际情况一般是两个
+总体分布形状相同或 类似，这时可简化为两个总体中位数相等或不等。注意的是，理论上一个总体分布为正偏态、 
+另一个总体分布为负偏态时，也可能两个总体中位数相等，这时认为正偏态总体分布位置比负偏态总体分布位置要右一些。
+
+### Wilcoxon秩和检验的原理与过程
+
+假设有两个独立样本数据(通常是一个处理因素下的两个或多个水平)，分别是样本容量为m，n的数据X和Y，即相当于一个处理重复了，m+n次独立实验。
+
+Wilcoxon秩和检验的计算过程大致如下：
+1. 将X，Y数据集合并成为一个容量为(m+n)的数据表，并按照从小到大排序得到秩，1,...,m+n。
+
+### 连续型资料的两样本比较
+
+计量资料为原始数据(测量数据)的两样本比较，这里以《医学统计学》书中的案例8-3数据作为示例。
+设置的原假设$H_0:$肺癌患者和矽肺0期的工人RD秩总体分布位置相同；备择假设$H_1$肺癌患者RD值高于矽肺0期工人的RD值，是单侧检验。
+
+```r 
+library("memisc")
+library("kableExtra")
+#读取数据
+Lcp<-spss.system.file("ExampleData/SavData4MedSta/Exam08-03.sav")
+Lcp_df<-as.data.frame(as.data.set(Lcp))
+#  'data.frame':	22 obs. of  2 variables:
+#   $ GROUP: num  1 1 1 1 1 1 1 1 1 1 ...
+#   $ R1值 : num  2.78 3.23 4.2 4.87 5.12 6.21 7.18 8.05 8.56 9.6 ...
+
+#对测试数据进行方差齐性分析
+x <- Lcp_df$R1值[which(Lcp_df$GROUP==1)]
+y <- Lcp_df$R1值[which(Lcp_df$GROUP==2)]
+var.test(x,y)
+## 	F test to compare two variances
+## 
+## data:  x and y
+## F = 16.836, num df = 9, denom df = 11, p-value = 6.517e-05
+## alternative hypothesis: true ratio of variances is not equal to 1
+## 95 percent confidence interval:
+##   4.692491 65.864395
+## sample estimates:
+## ratio of variances 
+##           16.83618 
+
+# 1 使用rank()函数计算合并数据后秩
+rank_vals<- rank(c(x,y))
+# 2 取不同水平再秩和
+sum_xrank<-sum(rank(c(x,y))[1:length(x)])
+sum_yrank<-sum(rank(c(x,y))[(length(x)+1):(length(x)+length(y))])
+
+#如果使用 pwilcox()或psignrank()查找P值
+pwilcox(sum_yrank,10,12,lower.tail = F)
+# [1] 0.04021056
+psignrank(sum_xrank,2,lower.tail = F)
+# [1] 0.0001036116
+
+wilcox.test(x,y,mu=0,paired = F,alternative = c("greater"),exact=F,correct = F)
+##  	Wilcoxon rank sum test
+##  
+##  data:  x and y
+##  W = 86.5, p-value = 0.04024
+##  alternative hypothesis: true location shift is greater than 0
+pwilcox(86.5,10,12,lower.tail = F)
+# [1] 0.04021056
+
+```
+
+根据上面的结果，按照分布计算的总秩无法有效使用 pwilcox()或psignrank()概率累积分布函数获取P值，和书上的T界值表有
+较大差异。因此使用wilcox.test()函数直接计算得到对应的W值和P值，这和pwilcox()对应的P值几乎一致。P值=0.04021056<0.05，
+因此拒绝原假设，接受备择假设，可以认为肺癌患者RD值高于矽肺0期工人的RD值。
+
+
+### 非连续型资料的两样本比较
+
+数据为频数资料的样本先按照数量区间分组；等级资料先按照等级分组。这里以《医学统计学》书中的案例8-4数据作为示例。
+设置的原假设$H_0:$吸烟工人与不吸烟工人的HbCO含量的总体分布位置相同；备择假设$H_1$吸烟工人高于不吸烟工人的HbCO含量，是单侧检验。
+
+```r 
+library("memisc")
+#读取数据
+smk<-spss.system.file("ExampleData/SavData4MedSta/Exam08-04.sav")
+smk_df<-as.data.frame(as.data.set(smk))
+str(smk_df)
+
+FREQ<-smk_df$FREQ
+Group<-smk_df$GROUP
+mmol<-smk_df$含量
+
+frequence_ranked_data_ranksum_caculator<-function(Freq,Group1,Group2){
+   FREQ<-Freq
+   Group<-Group1
+   mmol<-Group2
+
+   break_point<-0
+   levels_val<-c()
+   group_val<-c()
+   mmol_levels<-unique(mmol)
+
+   for(i in 1:length(mmol_levels)){
+      mmol_val<-mmol_levels[i]
+      #cat(FREQ[which(mmol==mmol_val)],"   ")
+      group<-Group[which(mmol==mmol_val)]
+      freq<-FREQ[which(mmol==mmol_val)]
+      freq_sum<-sum(freq)
+      break_point<-break_point+freq_sum
+      group_val<-c(group_val,rep(group,freq))
+      levels_val<-c(levels_val,rep(mmol_val,freq_sum))
+      #cat(group_val,"\n")
+   }
+   
+   ranked_vals<-rank(levels_val)
+   group_levels<-unique(Group)
+   T_vals<-c()
+   for(i in 1:length(group_levels)){
+      T_val<-sum(ranked_vals[which(group_val==group_levels[i])])
+      T_vals<-c(T_vals,T_val)
+      #cat(T_val,"\n")
+   }
+   names(T_vals)<-group_levels
+   result_list<-list(T_vals,levels_val,group_val)
+   names(result_list)<-c("T_vals","Group1_val","Group2_val")
+   return(result_list)
+}
+
+tmp1<-frequence_ranked_data_ranksum_caculator(FREQ,Group,mmol)
+tmp1$T_vals
+#    1    2 
+# 1917 1243
+
+##正态近似法
+ranksumtest_uAsym<-function(T_val,groups1,freqs1,groups2,freqs2){
+   n1<-sum(freqs1)
+   n2<-sum(freqs2)
+   eqrank<-intersect(groups1,groups2)
+   tmp_val<-0
+   for(i in 1:length(eqrank)){
+      t_val<-(sum(freqs1[which(groups1==eqrank[i])],freqs2[which(groups2==eqrank[i])]))
+      tmp_val<-tmp_val+t_val^3-t_val
+   }
+   #cat(T_val,"\n",groups1,"\n",freqs1,"\n",groups2,"\n",freqs2,"\n",tmp_val)
+   u<-(T_val-n1*(n1+n1+1)/2)/sqrt((n1*n2*(n1+n2+1)/12)*(1-tmp_val/((n1+n2)^3-(n1+n2))))
+   #cat(u,"\n")
+   return(pnorm(u,lower.tail = F))
+}
+
+ranksumtest_uAsym(1917,1:5,FREQ[1:5],1:5,FREQ[6:10])
+# [1] 4.720595e-05
+
+##wilcox.test()方法
+levels_val<-tmp1$Group1_val
+group_val<-tmp1$Group2_val
+wilcox.test(levels_val[which(group_val==1)],levels_val[which(group_val==2)],paired=F,correct = T,exact = F)
+
+## 	Wilcoxon rank sum test with continuity correction
+## 
+## data:  levels_val[which(group_val == 1)] and levels_val[which(group_val == 2)]
+## W = 1137, p-value = 0.0002181
+##  alternative hypothesis: true location shift is not equal to 0
+
+pwilcox(1137,39,40,lower.tail = F)
+# [1] 0.0001758351
+```
+
+根据计算结果P值<0.05，因此拒绝原假设$H_0$，接受$H_1$，可认为吸烟工人的HbCO含量高于不吸工人的HbCO含量。
+
+## 完全随机设计多个样本比较的Kruskal-Wallis H 检验
+
+Kruskal-Wallis H检验(Kruskal-Wallis H test)，用于推断计量资料或等级资料的多个独立样本所来自的多个总体分布
+是否有差别。在理论上检验假设$H_0$应为多个总体分布相同，即多个样本来自同一总体。 由于H检验对多个总体分布的形
+状差别不敏感，故在实际应用中检验假设$H_0$可写作多个总体分布位置相同。备择假设$H_1$为多个总体分布的位置不全相同。
+
+### 原始数据的多个样本比较
+
+这里以《医学统计学》书中的案例8-5数据作为示例。
+设置的原假设$H_0:$3种药物杀灭钉螺的致死率的总体分布位置相同；备择假设$H_1$3种药物杀灭钉螺的致死率的总体分布位置不全相同，是双侧检验。
+```{r ranktab1, echo=FALSE,warning=FALSE,message=FALSE} 
+library("dplyr")
+library("kableExtra") 
+library("memisc")
+#读取数据
+Oncomelania<-spss.system.file("ExampleData/SavData4MedSta/Exam08-05.sav")
+Oncomelania_df<-as.data.frame(as.data.set(Oncomelania))
+Oncomelania_v<-Oncomelania_df[,2]
+names(Oncomelania_v)<-Oncomelania_df[,1]
+Oncomelania_v<-t(Oncomelania_v)
+rownames(Oncomelania_v)<-c("Ratio")
+knitr::kable( Oncomelania_v, caption = '3种药物杀灭钉螺的致死率数据',
+    booktabs = TRUE, digits = 4, align='ccc',format.args = list(scientific = FALSE)) %>%
+kable_paper("striped", full_width = F)  %>% 
+kableExtra::kable_styling() 
+```
+
+```r 
+library("dplyr")
+library("kableExtra") 
+library("memisc")
+#读取数据
+Oncomelania<-spss.system.file("ExampleData/SavData4MedSta/Exam08-05.sav")
+Oncomelania_df<-as.data.frame(as.data.set(Oncomelania))
+colnames(Oncomelania_df ) <- c("Group","Ratio")
+kruskal.test(Oncomelania_df$Ratio,Oncomelania_df$Group)
+## 	Kruskal-Wallis rank sum test
+## 
+## data:  Oncomelania_df$Ratio and Oncomelania_df$Group
+## Kruskal-Wallis chi-squared = 9.74, df = 2, p-value = 0.007673
+```
+根据计算结果，P值<0.05，因此拒绝原假设$H_0$，接受$H_1$，可认为3种药物的致死率不全一样。
+
+这里以《医学统计学》书中的案例8-6数据作为示例。设置的原假设$H_0:$3种不同菌型的伤寒杆菌的存活日数总体分布位
+置相同；备择假设$H_1$3种不同菌型的伤寒杆菌的存活日数总体分布位置不全相同，是双侧检验。
+
+```{r ranktab2, echo=FALSE,warning=FALSE,message=FALSE} 
+library("dplyr")
+library("kableExtra") 
+library("memisc")
+library("tibble")
+
+ranktab2<-tibble(
+  'DSC' = c(3,5,6,6,6,7,7,9,10,11,11),
+  '9D' = c(2,2,2,3,4,4,5,7,7,"",""), 
+  '11C' = c(5,5,6,6,7,8,10,12,"","","")
+  
+)
+knitr::kable( t(ranktab2), caption = '3种不同菌型的伤寒杆菌的存活日数数据',
+    booktabs = TRUE, digits = 4, align='ccc',format.args = list(scientific = FALSE)) %>%
+    kable_paper("striped", full_width = F)  %>% 
+    add_header_above(c("菌型", "存活天数" = 11 )) %>% 
+    kableExtra::kable_styling() 
+```
+```r 
+DSC <- c(3,5,6,6,6,7,7,9,10,11,11)
+D9 <- c(2,2,2,3,4,4,5,7,7)
+C11 <- c(5,5,6,6,7,8,10,12)
+
+Bactype<-as.data.frame(cbind(c(rep(1,length(D9)),rep(2,length(C11)),rep(3,length(DSC))),c(D9,C11,DSC)))
+colnames(Bactype)<-c("Group","Days")
+kruskal.test(Bactype$Days,Bactype$Group)
+# 	Kruskal-Wallis rank sum test
+# 
+# data:  Bactype$Days and Bactype$Group
+# Kruskal-Wallis chi-squared = 8.706, df = 2, p-value = 0.01287
+```
+
+根据计算结果，P值=0.01287<0.05，因此拒绝原假设$H_0$，接受$H_1$，可认为3菌型的存货天数的总体分布位置不全相同。
+
+### 频数表资料和登记资料的多个样本比较
+
+数据为频数资料的样本先按照数量区间分组；等级资料先按照等级分组。这里以《医学统计学》书中的案例8-7数据作为示例。
+设置的原假设$H_0:$4种疾病患者的痰液内嗜酸性白细胞总体分布位置相同；备择假设$H_1$4种疾病患者的痰液内嗜酸性白细胞总体分布位置不全相同。
+
+```{r ranktab3, echo=FALSE,warning=FALSE,message=FALSE} 
+library("dplyr")
+library("kableExtra") 
+library("memisc")
+library("tibble")
+#读取数据
+leukocyte<-spss.system.file("ExampleData/SavData4MedSta/Exam08-07.sav")
+leukocyte_df<-as.data.frame(as.data.set(leukocyte))
+colnames(leukocyte_df)<-c("Disease","Lecuk.level","Freq")
+knitr::kable(t(leukocyte_df), caption = '4种疾病患者的痰液内嗜酸性白细胞数据',
+    booktabs = TRUE, digits = 4, align='ccc',format.args = list(scientific = FALSE)) %>%
+    kable_paper("striped", full_width = F)  %>% 
+    kableExtra::kable_styling()
+```
+
+```r 
+library("dplyr")
+library("memisc")
+library("tibble")
+#读取数据
+leukocyte<-spss.system.file("ExampleData/SavData4MedSta/Exam08-07.sav")
+leukocyte_df<-as.data.frame(as.data.set(leukocyte))
+colnames(leukocyte_df)<-c("Disease","Lecuk.level","Freq")
+
+frequence_ranked_data_ranksum_caculator<-function(Freq,Group1,Group2){
+   FREQ<-Freq
+   Group<-Group1
+   mmol<-Group2
+
+   break_point<-0
+   levels_val<-c()
+   group_val<-c()
+   mmol_levels<-unique(mmol)
+
+   for(i in 1:length(mmol_levels)){
+      mmol_val<-mmol_levels[i]
+      #cat(FREQ[which(mmol==mmol_val)],"   ")
+      group<-Group[which(mmol==mmol_val)]
+      freq<-FREQ[which(mmol==mmol_val)]
+      freq_sum<-sum(freq)
+      break_point<-break_point+freq_sum
+      group_val<-c(group_val,rep(group,freq))
+      levels_val<-c(levels_val,rep(mmol_val,freq_sum))
+      #cat(group_val,"\n")
+   }
+   
+   ranked_vals<-rank(levels_val)
+   group_levels<-unique(Group)
+   T_vals<-c()
+   for(i in 1:length(group_levels)){
+      T_val<-sum(ranked_vals[which(group_val==group_levels[i])])
+      T_vals<-c(T_vals,T_val)
+      #cat(T_val,"\n")
+   }
+   names(T_vals)<-group_levels
+   result_list<-list(T_vals,levels_val,group_val)
+   names(result_list)<-c("T_vals","Group1_val","Group2_val")
+   return(result_list)
+}
+
+tmp1<-frequence_ranked_data_ranksum_caculator(leukocyte_df$Freq,leukocyte_df$Disease,leukocyte_df$Lecuk.level)
+
+tmp1$T_vals
+#     1     2     3     4 
+# 739.5 436.5 409.5 244.5 
+
+levels_val<-tmp1$Group1_val
+group_val<-tmp1$Group2_val
+kruskal.test(levels_val,group_val,paired=F,correct = T,exact = F)
+# 	Kruskal-Wallis rank sum test
+# 
+# data:  levels_val and group_val
+# Kruskal-Wallis chi-squared = 15.506, df = 3, p-value = 0.001432
+```
+根据计算结果，P值=0.001432<0.05，因此拒绝原假设$H_0$，接受$H_1$，可认为4种疾病患者的痰液内嗜酸性白细胞总体分布位置不全相同。
+
+## 多个独立样本两两比较的Nemenyi法检验
+
+当经过多个独立样本比较的 Kruskal-Wallis H检验拒绝$H_0$，接受$H_1$，认为多个总体分布位置不全相同时，若要进一步推断是哪两两总
+体分布位置不同，可用 Nemenyi 法检验(Nemenyi test)。
+
+这里以《医学统计学》书中的案例8-6数据作为示例。设置的原假设$H_0:$任意不同菌型的存活天数分布位置相同；备择假设$H_1$任意两种不同菌型的伤寒杆菌的存活日数总体分布位置不相同，是双侧检验。
+
+```r 
+
+#PMCMRplus包中的kwAllPairsNemenyiTest()函数
+#install.packages("PMCMRplus")
+library("PMCMRplus")
+
+D9 <- c(2,2,2,3,4,4,5,7,7)
+C11 <- c(5,5,6,6,7,8,10,12)
+DSC <- c(3,5,6,6,6,7,7,9,10,11,11)
+
+Bactype<-as.data.frame(cbind(c(rep(1,length(D9)),rep(2,length(C11)),rep(3,length(DSC))),c(D9,C11,DSC)))
+colnames(Bactype)<-c("Group","Days")
+Nem_t1<-kwAllPairsNemenyiTest(Days ~ Group, data = Bactype,dist="Tukey")
+## 	Pairwise comparisons using Tukey-Kramer-Nemenyi all-pairs test with Tukey-Dist approximation
+## 
+## data: Days by Group
+## 
+##   1     2    
+## 2 0.041 -    
+## 3 0.022 0.999
+## 
+## P value adjustment method: single-step
+## alternative hypothesis: two.sided
+## Warning message:
+## In kwAllPairsNemenyiTest.default(c(2, 2, 2, 3, 4, 4, 5, 7, 7, 5,  :
+##   Ties are present, p-values are not corrected.
+
+
+#DescTools 包中的NemenyiTest()函数
+library(DescTools)
+Nem_t<-NemenyiTest(Bactype$Days, Bactype$Group,dist="tukey")
+Nem_t
+##  Nemenyi's test of multiple comparisons for independent samples (tukey)  
+## 
+##     mean.rank.diff   pval    
+## 2-1      9.6736111 0.0411 *  
+## 3-1      9.7929293 0.0220 *  
+## 3-2      0.1193182 0.9995    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+```
+
+根据计算结果，1-2相比的P值=0.0411<0.05，具有统计学意义，可以认为两种不同菌型的存活天数不同，从均值来看。第二种的存货天数显著要高；
+1-3相比的P值=0.0220，具有统计学意义；2-3相比的P值=0.9995，不具有统计学意义；
+
+
+## 随机区组设计多个相关样本的Friedman M 检验
+
+Friedman M检验(Friedman's M test)，用于推断随机区组设计的多个相关样本所来自的多个总体分布是否有差别。
+检验假设$H_0$，和备择假设$H_1$与多个独立样本比较的Kruskal-Wallis H检验相同。
+
+这里以《医学统计学》书中的案例8-9数据作为示例。设置的原假设$H_0:$4种频率声音刺激的反应率总体分布的位置相同；备择假设$H_1$4种频率声音刺激的反应率总体分布的位置不全相同，是双侧检验。
+
+
+```{r ranktab4, echo=FALSE,warning=FALSE,message=FALSE} 
+library("dplyr")
+library("kableExtra") 
+library("memisc")
+#读取数据
+incitant<-spss.system.file("ExampleData/SavData4MedSta/Exam08-09.sav")
+incitant_df<-as.data.frame(as.data.set(incitant))
+colnames(incitant_df)<-c("FreqA","FreqB","FreqC","FreqD")
+knitr::kable(incitant_df, caption = '4种声音频率的刺激反应数据',
+    booktabs = TRUE, digits = 4, align='ccc',format.args = list(scientific = FALSE)) %>%
+    kable_paper("striped", full_width = F)  %>% 
+    kableExtra::kable_styling()
+```
+
+```r 
+library("dplyr")
+library("memisc")
+#读取数据
+incitant<-spss.system.file("ExampleData/SavData4MedSta/Exam08-09.sav")
+incitant_df<-as.data.frame(as.data.set(incitant))
+colnames(incitant_df)<-c("FreqA","FreqB","FreqC","FreqD")
+
+friedman.test(as.matrix(incitant_df))
+# 	Friedman rank sum test
+# 
+# data:  as.matrix(incitant_df)
+# Friedman chi-squared = 15.152, df = 3, p-value = 0.001691
+```
+
+<!--  测试转换为两列形式的数据
+incitant_df1<-c()
+group_val<-c()
+for(i in 1:dim(incitant_df)[2]){
+   incitant_df1<-c(incitant_df1,incitant_df[,i])
+   group_val<-c(group_val,rep(colnames(incitant_df)[i],length(incitant_df[,i])))
+}
+incitant_df2<-as.data.frame(cbind(group_val,incitant_df1))
+names(incitant_df2)<-c("Group","Freq") !-->
+
+根据计算结果，P值=0.001691，因此拒绝原假设$H_0$，接受$H_1$，即4种声音频率的刺激率的总体分布位置不都相同。
+
+
+### 多个相关样本的两两比较
+
+当经过Friedman M检验拒绝$H_0$，接受$H_1$，认为多个总体分布位置不全相同时，若要进一步推断是哪两两总体分布位置不同，可用 q检验(Nemenyi test)。
+
+这里以《医学统计学》书中的案例8-10数据作为示例。设置的原假设$H_0:$任意两声音频率的刺激反应率的分布位置相同；备择假设$H_1$任意两声音频率的刺激反应率的分布位置不相同，是双侧检验。
+
+```r 
+library("dplyr")
+library("memisc")
+#读取数据
+incitant<-spss.system.file("ExampleData/SavData4MedSta/Exam08-09.sav")
+incitant_df<-as.data.frame(as.data.set(incitant))
+colnames(incitant_df)<-c("FreqA","FreqB","FreqC","FreqD")
+
+#PMCMRplus包中的 quadeAllPairsTest()函数
+#install.packages("PMCMRplus")
+library("PMCMRplus")
+quadeAllPairsTest(as.matrix(incitant_df))  
+# 	Pairwise comparisons using Quade's test with TDist approximation
+# 
+# data: as.matrix(incitant_df)
+# 
+#       FreqA   FreqB   FreqC  
+# FreqB 0.27307 -       -      
+# FreqC 0.01584 0.14099 -      
+# FreqD 0.00029 0.00351 0.15476
+
+quadeAllPairsTest(as.matrix(incitant_df),dist="Normal")
+# 	Pairwise comparisons using Quade's test	with standard-normal approximation
+# 
+# data: as.matrix(incitant_df)
+# 
+#       FreqA   FreqB   FreqC 
+# FreqB 0.2200  -       -     
+# FreqC 0.0017  0.0644  -     
+# FreqD 1.7e-07 7.7e-05 0.0860
+# 
+# P value adjustment method: holm
+
+quadeAllPairsTest(as.matrix(incitant_df),dist="Normal",p.adjust.method="fdr")
+
+# 	Pairwise comparisons using Quade's test	with standard-normal approximation
+# 
+# data: as.matrix(incitant_df)
+# 
+#       FreqA   FreqB   FreqC  
+# FreqB 0.22001 -       -      
+# FreqC 0.00084 0.03220 -      
+# FreqD 1.7e-07 4.6e-05 0.05160
+# 
+# P value adjustment method: fdr
+
+```
+
+**根据计算结果会发现，quadeAllPairsTest()的结果随着参数设置的改变发生变化美因茨在使用时候，需要是适当选择或多选几组看看。**
+

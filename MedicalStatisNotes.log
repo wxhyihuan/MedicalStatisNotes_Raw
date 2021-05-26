@@ -1,0 +1,2160 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=latex 2020.12.7)  7 DEC 2020 20:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**MedicalStatisNotes.tex
+(./MedicalStatisNotes.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-05> xparse <2020-03-03>
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.st
+y
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen139
+)) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.st
+y
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count185
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count186
+\leftroot@=\count187
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count188
+\DOTSCASE@=\count189
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count190
+\c@MaxMatrixCols=\count191
+\dotsspace@=\muskip16
+\c@parentequation=\count192
+\dspbrk@lvl=\count193
+\tag@help=\toks17
+\row@=\count194
+\column@=\count195
+\maxfields@=\count196
+\andhelp@=\toks18
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctex.sty
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-12-05 L3 programming layer (loader) 
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-
+dvips.def
+File: l3backend-dvips.def 2020-09-24 L3 backend support: dvips
+\l__pdf_internal_box=\box49
+\g__pdf_backend_object_int=\count197
+\l__pdf_backend_content_box=\box50
+\l__pdf_backend_model_box=\box51
+\g__pdf_backend_annotation_int=\count198
+\g__pdf_backend_link_int=\count199
+\g__pdf_backend_link_sf_int=\count266
+))
+Package: ctex 2020/10/19 v2.5.5 Chinese adapter in LaTeX (CTEX)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xp
+arse.sty
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xp
+arse-generic.tex))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/
+l3keys2e.sty
+Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2020/10/19 v2.5.5 Document and package hooks (CTEX)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2020/10/19 v2.5.5 Patching commands (CTEX)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\l__ctex_tmp_int=\count267
+\l__ctex_tmp_box=\box52
+\l__ctex_tmp_dim=\dimen148
+\g__ctex_section_depth_int=\count268
+\g__ctex_font_size_int=\count269
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts
+.cfg
+File: ctexopts.cfg 2020/10/19 v2.5.5 Option configuration file (CTEX)
+)
+
+Package ctex Warning: UTF8 will be used as the default encoding.
+
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-eng
+ine-pdftex.def
+File: ctex-engine-pdftex.def 2020/10/19 v2.5.5 (pdf)LaTeX adapter (CTEX)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/CJKutf8
+.sty
+Package: CJKutf8 2015/04/18 4.8.4
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/mule/MU
+LEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box53
+) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+12.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjkpunct/CJKpunct.st
+y
+Package: CJKpunct 2016/05/14 4.8.4
+\CJKpunct@cnta=\count270
+\CJKpunct@cntb=\count271
+\CJKpunct@cntc=\count272
+\CJKpunct@cntd=\count273
+\CJKpunct@cnte=\count274
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2026 (decimal 8230)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjkpunct/CJKpunct.sp
+a))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/CJKspac
+e.sty
+Package: CJKspace 2015/04/18 3.8.0
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexspa.def
+File: ctexspa.def 2020/10/19 v2.5.5 Space info for CJKpunct (CTEX)
+)
+\ccwd=\dimen149
+\l__ctex_ccglue_skip=\skip52
+)
+\l__ctex_ziju_dim=\dimen150
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber.st
+y
+Package: zhnumber 2020/05/01 v2.8 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count275
+\l__zhnum_byte_min_int=\count276
+\l__zhnum_byte_max_int=\count277
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber-ut
+f8.cfg
+File: zhnumber-utf8.cfg 2020/05/01 v2.8 Chinese numerals with UTF8 encoding
+))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/scheme/ctex-sch
+eme-chinese.def
+File: ctex-scheme-chinese.def 2020/10/19 v2.5.5 Chinese scheme for generic (CTE
+X)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex-nam
+e-utf8.cfg
+File: ctex-name-utf8.cfg 2020/10/19 v2.5.5 Caption with encoding UTF-8 (CTEX)
+))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/indentfirst.st
+y
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2020/10/19 v2.5.5 c5size option (CTEX)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/fontset/ctex-fo
+ntset-windows.def
+File: ctex-fontset-windows.def 2020/10/19 v2.5.5 Windows fonts definition (CTEX
+)
+))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2020/10/19 v2.5.5 Configuration file (CTEX)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.c
+fg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/dvips.d
+ef
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.st
+y
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.st
+y
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexc
+mds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarer
+r.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkey
+s.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdef
+inekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescap
+e.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxma
+cro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.
+sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen151
+\Hy@linkcounter=\count278
+\Hy@pagecounter=\count279
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.st
+y
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.
+sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count280
+Package hyperref Info: Option `unicode' set `true' on input line 4338.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4338.
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count281
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen152
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintc
+alc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count282
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.st
+y
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count283
+\c@Item=\count284
+\c@Hfootnote=\count285
+)
+Package hyperref Info: Driver (fallback): hdvipdfm.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hdvipdfm.de
+f
+File: hdvipdfm.def 2020-05-15 v7.00e Hyperref driver for dvipdfm
+\pdfm@box=\box54
+\c@Hy@AnnotLevel=\count286
+\HyField@AnnotCount=\count287
+\Fld@listcount=\count288
+\c@bookmark@seq@number=\count289
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerun
+filecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.s
+ty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniq
+uecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip53
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.st
+y
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count290
+\FV@InFile=\read2
+\FV@TabBox=\box55
+\c@FancyVerbLine=\count291
+\FV@StepNumber=\count292
+\FV@OutFile=\write3
+) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip54
+\fb@frw=\dimen155
+\fb@frh=\dimen156
+\FrameRule=\dimen157
+\FrameSep=\dimen158
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count293
+\LTcapwidth=\dimen159
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@cols=\count294
+\LT@rows=\count295
+\c@LT@tables=\count296
+\c@LT@chunks=\count297
+\LT@p@ftn=\toks24
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count298
+\@cmidlb=\count299
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count300
+\@lastruleclass=\count301
+\@thisrulewidth=\dimen172
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.st
+y
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count302
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.st
+y
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box60
+\fn@width=\dimen173
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.st
+y
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.st
+y
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphic
+s.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 105.
+)
+\Gin@req@height=\dimen174
+\Gin@req@width=\dimen175
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grffile/grffile.sty
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
+y)
+Package grffile Info: This package is an empty stub for compatibility on input 
+line 40.
+) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip59
+\thm@postskip=\skip60
+\thm@headsep=\skip61
+\dth@everypar=\toks30
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen176
+\ar@mcellbox=\box61
+\extrarowheight=\dimen177
+\NC@list=\toks31
+\extratabsurround=\skip62
+\backup@length=\skip63
+\ar@cellbox=\box62
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.st
+y
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip64
+\multirow@cntb=\count303
+\multirow@dima=\skip65
+\bigstrutjot=\dimen178
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen179
+\WF@size=\dimen180
+\c@WF@wrappedlines=\count304
+\WF@box=\box63
+\WF@everypar=\toks32
+Package: wrapfig 2003/01/31  v 3.6
+) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count305
+\float@exts=\toks33
+\float@box=\box64
+\@float@everytoks=\toks34
+\@floatcapt=\box65
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.st
+y
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks35
+\minrowclearance=\skip66
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.
+sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvips (dvips) on input line 124.
+) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.st
+y
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box66
+\sift@deathcycles=\count306
+\@vwid@loff=\dimen181
+\@vwid@roff=\dimen182
+)
+\c@taburow=\count307
+\tabu@nbcols=\count308
+\tabu@cnt=\count309
+\tabu@Xcol=\count310
+\tabu@alloc=\count311
+\tabu@nested=\count312
+\tabu@target=\dimen183
+\tabu@spreadtarget=\dimen184
+\tabu@naturalX=\dimen185
+\tabucolX=\dimen186
+\tabu@Xsum=\dimen187
+\extrarowdepth=\dimen188
+\abovetabulinesep=\dimen189
+\belowtabulinesep=\dimen190
+\tabustrutrule=\dimen191
+\tabu@thebody=\toks36
+\tabu@footnotes=\toks37
+\tabu@box=\box67
+\tabu@arstrutbox=\box68
+\tabu@hleads=\box69
+\tabu@vleads=\box70
+\tabu@cellskip=\skip67
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/three
+parttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box71
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/thre
+eparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspace
+s.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip68
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box72
+\UL@hyphenbox=\box73
+\UL@skip=\skip69
+\UL@hook=\toks38
+\UL@height=\dimen192
+\UL@pe=\count313
+\UL@pixel=\dimen193
+\ULC@box=\box74
+Package: ulem 2019/11/18
+\ULdepth=\dimen194
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.st
+y
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen195
+\c@nlinenum=\count314
+\TeXr@lab=\toks39
+) (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip70
+\bibsep=\skip71
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count315
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UT
+F8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UT
+F8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UT
+F8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+No file MedicalStatisNotes.aux.
+\openout1 = `MedicalStatisNotes.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 136.
+Package hyperref Info: Link coloring OFF on input line 136.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.st
+y
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/get
+titlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count316
+)
+LaTeX Info: Redefining \ref on input line 136.
+LaTeX Info: Redefining \pageref on input line 136.
+LaTeX Info: Redefining \nameref on input line 136.
+\@outlinefile=\write4
+\openout4 = `MedicalStatisNotes.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+LaTeX Font Info:    Trying to load font information for C70+rm on input line 14
+0.
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/fd/c70rm.fd
+File: c70rm.fd 2020/10/19 v2.5.5 Chinese font definition (CTEX)
+)
+\tf@toc=\write5
+\openout5 = `MedicalStatisNotes.toc'.
+
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
+quanjiao) on input line 146.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+54.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for C70+zhfs on input line 
+156.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhmetrics/c70zhfs.fd
+File: c70zhfs.fd 2009/09/23 4.8.2
+)
+
+! LaTeX Error: File `image/Ms_logo' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 ...hics[width=0.25\linewidth]{image/Ms_logo}
+                                                   \end{center}
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `image/SponsorshipFig' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 ...idth=0.7\linewidth]{image/SponsorshipFig}
+                                                   \end{center}
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ctex/zhmap/ctex-zh
+map-windows.tex
+File: ctex-zhmap-windows.tex 2020/10/19 v2.5.5 Windows font map loader for pdfT
+eX and DVIPDFMx (CTEX)
+) [1
+
+]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.53937> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 189.
+ [2]
+
+! LaTeX Error: File `image/ChoiceStatisticalMethods_href' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 ...dth]{image/ChoiceStatisticalMethods_href}
+                                                   \hfill{}
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+41.
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+241.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+241.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.53937> on input line 241.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 241.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 241.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 241
+.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 241
+.
+
+(c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[3]
+Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyl
+e (quanjiao) on input line 262.
+
+Overfull \hbox (23.83942pt too wide) in paragraph at lines 273--293
+ [][] 
+ []
+
+[4]
+Package CJKpunct Info: use punctuation spaces for family 'zhfs' with punctstyle
+ (quanjiao) on input line 333.
+ [5]
+
+! LaTeX Error: File `image/a1e3904af844b14d3b57d1448690aea' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 ...t]{image/a1e3904af844b14d3b57d1448690aea}
+                                                   \includegraphics[width=0....
+
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `image/5ba23e818daa7c71b147707f9b5dfd6' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 ...t]{image/5ba23e818daa7c71b147707f9b5dfd6}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[6] [7]
+Underfull \hbox (badness 1242) in paragraph at lines 444--446
+[]\C70/rm/m/n/10.53937/56 € \C70/rm/m/n/10.53937/52 ^^F \C70/rm/m/n/10.53937/4f
+ M \C70/rm/m/n/10.53937/65 p\T1/lmr/m/n/10.53937 (quartile)\C70/rm/m/n/10.53937
+/66 / \C70/rm/m/n/10.53937/62 ä \C70/rm/m/n/10.53937/51 h \C70/rm/m/n/10.53937/
+90 Ë \C70/rm/m/n/10.53937/53 ÿ \C70/rm/m/n/10.53937/91 œ \C70/rm/m/n/10.53937/5
+0 < \C70/rm/m/n/10.53937/52 ^^F \C70/rm/m/n/10.53937/4e : \C70/rm/m/n/10.53937/
+56 € \C70/rm/m/n/10.53937/90 Ë \C70/rm/m/n/10.53937/52 ^^F \C70/rm/m/n/10.53937
+/76 Ñ \C70/rm/m/n/10.53937/52 ^^F \C70/rm/m/n/10.53937/4f M \C70/rm/m/n/10.5393
+7/65 p\T1/lmr/m/n/10.53937 ,\C70/rm/m/n/10.53937/53 s \C70/rm/m/n/10.53937/7b ,
+\T1/lmr/m/n/10.53937 1\C70/rm/m/n/10.53937/56 € \C70/rm/m/n/10.53937/52 ^^F \C7
+0/rm/m/n/10.53937/4f M
+ []
+
+[8] [9] [10]
+
+! LaTeX Error: File `figs/dnorm' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.578 ...width,height=0.49\textheight]{figs/dnorm}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `figs/pnorm' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.604 ...width,height=0.49\textheight]{figs/pnorm}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[11]
+
+! LaTeX Error: File `figs/qnorm' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.629 ...width,height=0.49\textheight]{figs/qnorm}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `figs/rnorm' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.654 ...width,height=0.49\textheight]{figs/rnorm}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[12] [13]
+
+! LaTeX Error: File `image/5ba23e818daa7c71b147707f9b5dfd6' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.745 ...t]{image/5ba23e818daa7c71b147707f9b5dfd6}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[14]
+
+! LaTeX Error: File `image/Densitytest' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.766 ...eight=0.49\textheight]{image/Densitytest}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `figs/qqPlottest1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.788 ...height=0.49\textheight]{figs/qqPlottest1}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[15]
+
+! LaTeX Error: File `figs/qqplot' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.807 ...idth,height=0.49\textheight]{figs/qqplot}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `image/qqPlot' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.823 ...dth,height=0.49\textheight]{image/qqPlot}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 841--843
+\C70/rm/m/n/10.53937/9a å \C70/rm/m/n/10.53937/63 – \C70/rm/m/n/10.53937/4f õ \
+C70/rm/m/n/10.53937/66 Ù \C70/rm/m/n/10.53937/59 } \C70/rm/m/n/10.53937/76 Ñ \C
+70/rm/m/n/10.53937/65 H \C70/rm/m/n/10.53937/75 (|\C70/rm/m/n/10.53937/30 ^^B| 
+\C70/rm/m/n/10.53937/57 (\T1/lmr/m/n/10.53937 R\C70/rm/m/n/10.53937/4e -|\C70/r
+m/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/6b c \C70/rm/m/n/10.53937/60 ^^A ' 
+\C70/rm/m/n/10.53937/76 Ñ\T1/lmr/m/n/10.53937 Shapiro-Wilk\C70/rm/m/n/10.53937/
+68 ¿ \C70/rm/m/n/10.53937/9a å \C70/rm/m/n/10.53937/53 Ô \C70/rm/m/n/10.53937/4
+e Â \C70/rm/m/n/10.53937/90 ^^Z \C70/rm/m/n/10.53937/8f « \C70/rm/m/n/10.53937/
+51 ˝
+ []
+
+[16] [17]
+Underfull \hbox (badness 2269) in paragraph at lines 908--910
+[]\C70/rm/m/n/10.53937/50 G \C70/rm/m/n/10.53937/8b æ \C70/rm/m/n/10.53937/68 ¿
+ \C70/rm/m/n/10.53937/9a å\T1/lmr/m/n/10.53937 (Hypothesis test)\C70/rm/m/n/10.
+53937/8f « \C70/rm/m/n/10.53937/53 ª \C70/rm/m/n/10.53937/4e _ \C70/rm/m/n/10.5
+3937/53 Î \C70/rm/m/n/10.53937/50 Z \C70/rm/m/n/10.53937/66 > \C70/rm/m/n/10.53
+937/84 W \C70/rm/m/n/10.53937/60 ' \C70/rm/m/n/10.53937/68 ¿ \C70/rm/m/n/10.539
+37/9a å\T1/lmr/m/n/10.53937 (Significance test)|\C70/rm/m/n/10.53937/ff ^^L|
+ []
+
+[18]
+! Missing { inserted.
+<to be read again> 
+                   \gdef 
+l.925 ÊÄª‰ΩìÊ†áÂáÜÂ∑Æ‰∏∫\(œÉ_\bar{x}
+                                    \)ÁöÑÊ≠£ÊÄÅÂàÜÂ∏É\(N(ŒºÔºåœÉ_\bar{x}^2)\...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.925 ÊÄª‰ΩìÊ†áÂáÜÂ∑Æ‰∏∫\(œÉ_\bar{x}\)
+                                      ÁöÑÊ≠£ÊÄÅÂàÜÂ∏É\(N(ŒºÔºåœÉ_\bar{x}^2)\...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \gdef 
+l.925 ...ar{x}\)ÁöÑÊ≠£ÊÄÅÂàÜÂ∏É\(N(ŒºÔºåœÉ_\bar{x}
+                                                  ^2)\)ÔºåÂàôÂèØÈÄöËøá\emph{...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.925 ...\)ÁöÑÊ≠£ÊÄÅÂàÜÂ∏É\(N(ŒºÔºåœÉ_\bar{x}^2)\)
+                                                  ÔºåÂàôÂèØÈÄöËøá\emph{u}Âèò...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \gdef 
+l.925 ...{u}ÂèòÊç¢(\(\frac{\bar{X}-Œº}{œÉ_\bar{x}}
+                                                  \))Â∞ÜÂÖ∂ËΩ¨Êç¢‰∏∫Ê†áÂáÜÊ≠...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.925 ...}ÂèòÊç¢(\(\frac{\bar{X}-Œº}{œÉ_\bar{x}}\)
+                                                  )Â∞ÜÂÖ∂ËΩ¨Êç¢‰∏∫Ê†áÂáÜÊ≠£Ê...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \gdef 
+l.926 ...ØÔºåÂÆûÈôÖ‰∏≠ÊÄª‰ΩìÊ†áÂáÜÂ∑Æ(\(œÉ_\bar{x}
+                                                  \))ÊòØÊú™Áü•ÁöÑÔºåÊâÄ‰ª•Áî...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.926 ...ºåÂÆûÈôÖ‰∏≠ÊÄª‰ΩìÊ†áÂáÜÂ∑Æ(\(œÉ_\bar{x}\)
+                                                  )ÊòØÊú™Áü•ÁöÑÔºåÊâÄ‰ª•Áî®Â...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \gdef 
+l.926 ...ÂùáÊï∞Ê†áÂáÜËØØÁöÑ‰º∞ËÆ°ÂÄºÔºà\(S_\bar{x}
+                                                  =\frac{S}{\sqrt{n}}\)ÔºåÂÖ...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.926 ...ËÆ°ÂÄºÔºà\(S_\bar{x}=\frac{S}{\sqrt{n}}\)
+                                                  ÔºåÂÖ∂‰∏≠S‰∏∫Ê†∑Êú¨Ê†áÂáÜÂ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \gdef 
+l.927 ËøôÂ∞±‰ΩøÂæó(\(\frac{\bar{X}-Œº}{S_\bar{x}}
+                                                 \))‰∏çÂÜçÊòØÊ†áÂáÜÊ≠£ÊÄÅÂàÜ...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.927 ...∞±‰ΩøÂæó(\(\frac{\bar{X}-Œº}{S_\bar{x}}\)
+                                                  )‰∏çÂÜçÊòØÊ†áÂáÜÊ≠£ÊÄÅÂàÜÂ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 923--929
+[]\C70/rm/m/n/10.53937/82 Â \C70/rm/m/n/10.53937/67 – \C70/rm/m/n/10.53937/4e ^
+^@ \C70/rm/m/n/10.53937/96 è \C70/rm/m/n/10.53937/67 : \C70/rm/m/n/10.53937/53 
+ÿ \C70/rm/m/n/10.53937/91 œ\T1/lmr/m/it/10.53937 X \C70/rm/m/n/10.53937/67 ^^M 
+\C70/rm/m/n/10.53937/4e Œ \C70/rm/m/n/10.53937/60 ; \C70/rm/m/n/10.53937/4f S \
+C70/rm/m/n/10.53937/57 G \C70/rm/m/n/10.53937/65 p \C70/rm/m/n/10.53937/4e : \C
+70/rm/m/it/10.53937/03 º|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/60 ;
+ \C70/rm/m/n/10.53937/4f S \C70/rm/m/n/10.53937/68 ^^G ^^G \C70/rm/m/n/10.53937
+/51 ∆ \C70/rm/m/n/10.53937/5d Ó \C70/rm/m/n/10.53937/4e : \C70/rm/m/it/10.53937
+/03 √\C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/6b c \C70/rm/m/n/10.53937/6
+0 ^^A \C70/rm/m/n/10.53937/52 ^^F
+ []
+
+! Missing { inserted.
+<to be read again> 
+                   \gdef 
+l.929 \[t=\frac{\bar{X}-Œº}{S_\bar{x}}
+                                      =\frac{\bar{X}-Œº}{\frac{S}{\sqrt{n}}}\]
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.929 ...}=\frac{\bar{X}-Œº}{\frac{S}{\sqrt{n}}}\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[19]
+
+! LaTeX Error: File `figs/tdist' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.968 ...width,height=0.49\textheight]{figs/tdist}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[20]
+
+! LaTeX Error: File `figs/pttest' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1022 ...dth,height=0.49\textheight]{figs/pttest}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[21]
+
+! LaTeX Error: File `figs/qttest' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1055 ...dth,height=0.49\textheight]{figs/qttest}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `figs/rttest' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1083 ...dth,height=0.49\textheight]{figs/rttest}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[22]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+120.
+ (c:/Users/wxh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+[23]
+Underfull \hbox (badness 1259) in paragraph at lines 1148--1149
+[]\C70/rm/m/n/10.53937/24 ` \C70/rm/m/n/10.53937/4e Œ ã \C70/rm/m/n/10.53937/52
+ M \C70/rm/m/n/10.53937/4f \ \C70/rm/m/n/10.53937/4e ^^Z \C70/rm/m/n/10.53937/7
+6 Ñ \C70/rm/m/n/10.53937/68 7 \C70/rm/m/n/10.53937/54 ¡ \C70/rm/m/n/10.53937/88
+ @ \C70/rm/m/n/10.53937/7e ¢ \C70/rm/m/n/10.53937/54 + \C70/rm/m/n/10.53937/91 
+œ \C70/rm/m/n/10.53937/78 n \C70/rm/m/n/10.53937/5b û \C70/rm/m/n/10.53937/4e ^
+^N \C70/rm/m/n/10.53937/6b c \C70/rm/m/n/10.53937/5e 8 \C70/rm/m/n/10.53937/68 
+7 \C70/rm/m/n/10.53937/54 ¡ \C70/rm/m/n/10.53937/4e ^^M ^^@ \C70/rm/m/n/10.5393
+7/68 7|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/53 s \C70/rm/m/n/10.53
+937/97 ^ \C70/rm/m/n/10.53937/54 ^^L \C70/rm/m/n/10.53937/4e ^^@ \C70/rm/m/n/10
+.53937/60 ;
+ []
+
+[24]
+Underfull \hbox (badness 3514) in paragraph at lines 1177--1178
+[]\T1/lmr/m/n/10.53937 (2)$\OT1/lmr/m/n/10.53937 º[]º[]$|\C70/rm/m/n/10.53937/f
+f ^^L| \C70/rm/m/n/10.53937/53 s \C70/rm/m/n/10.53937/59 ^^G \C70/rm/m/n/10.539
+37/62 È \C70/rm/m/n/10.53937/50 G \C70/rm/m/n/10.53937/8b æ\T1/lmr/m/n/10.53937
+ (Alternative test)|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/4e _ \C70
+/rm/m/n/10.53937/79  \C70/rm/m/n/10.53937/4e : \C70/rm/m/n/10.53937/5b ˘ \C70/
+rm/m/n/10.53937/7a À \C70/rm/m/n/10.53937/50 G \C70/rm/m/n/10.53937/8b æ|\C70/r
+m/m/n/10.53937/ff ^^L|
+ []
+
+[25]
+
+! LaTeX Error: File `image/type12error' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1229 ...ight=0.49\textheight]{image/type12error}
+                                                   \includegraphics[width=0....
+
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `image/type12error_en' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1229 ...t=0.49\textheight]{image/type12error_en}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[26]
+Underfull \hbox (badness 1320) in paragraph at lines 1268--1269
+[]\C70/rm/m/n/10.53937/24 a \C70/rm/m/n/10.53937/4f \ \C70/rm/m/n/10.53937/7e ”
+ \C70/rm/m/n/10.53937/8b ∫ \C70/rm/m/n/10.53937/66 /|\C70/rm/m/n/10.53937/ff ^^
+L| \C70/rm/m/n/10.53937/5b ˘$\OML/lmm/m/it/10.53937 H[]$\C70/rm/m/n/10.53937/53
+ Í \C70/rm/m/n/10.53937/80 ˝ \C70/rm/m/n/10.53937/8b Ù \C70/rm/m/n/10.53937/62 
+“ \C70/rm/m/n/10.53937/7e ›\T1/lmr/m/n/10.53937 (Reject)\C70/rm/m/n/10.53937/62
+ ^^V \C70/rm/m/n/10.53937/80 ^^E \C70/rm/m/n/10.53937/4e ^^M \C70/rm/m/n/10.539
+37/62 “ \C70/rm/m/n/10.53937/7e ›\T1/lmr/m/n/10.53937 (Not reject)$\OML/lmm/m/i
+t/10.53937 H[]$|\C70/rm/m/n/10.53937/30 ^^B| \C70/rm/m/n/10.53937/80 ^^L
+ []
+
+[27] [28] [29] [30] [31]
+
+! LaTeX Error: File `figs/hometdist' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1434 ...,height=0.49\textheight]{figs/hometdist}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[32] [33]
+
+! LaTeX Error: File `figs/piredttest' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1533 ...height=0.49\textheight]{figs/piredttest}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[34] [35]
+Underfull \vbox (badness 1558) detected at line 1637
+ []
+
+[36] [37]
+
+! LaTeX Error: File `image/ieandht' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1659 ...h,height=0.49\textheight]{image/ieandht}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[38] [39] [40]
+
+LaTeX Warning: Reference `fig:Datatransfromsuit' on page 41 undefined on input 
+line 1783.
+
+[41]
+
+! LaTeX Error: File `image/Datatransfromsuit' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1804 ...0.5\textheight]{image/Datatransfromsuit}
+                                                   \includegraphics[width=0....
+
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `image/Distributional transformations' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1804 ...t]{image/Distributional transformations}
+                                                   \hfill{}
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[42]
+
+! LaTeX Error: File `figs/logtrans1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1869 ...ics[width=0.9\linewidth]{figs/logtrans1}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[43]
+
+! LaTeX Error: File `image/badywtVSbrainwt' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1898 ...=0.99\textheight]{image/badywtVSbrainwt}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[44]
+Underfull \vbox (badness 10000) detected at line 1949
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1949
+ []
+
+[45] [46] [47]
+
+! LaTeX Error: File `figs/fdistri' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2014 ...hics[width=0.49\linewidth]{figs/fdistri}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[48] [49] [50]
+
+! LaTeX Error: File `image/xyzAnovaFig' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2128 ...[width=0.7\linewidth]{image/xyzAnovaFig}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `image/MSbeqMSw' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2144 ...ics[width=0.7\linewidth]{image/MSbeqMSw}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `image/MSbgtMSw' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2158 ...ics[width=0.7\linewidth]{image/MSbgtMSw}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[51]
+
+! LaTeX Error: File `image/MSbltMSw' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2172 ...ics[width=0.7\linewidth]{image/MSbltMSw}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[52]
+Overfull \vbox (1.70004pt too high) detected at line 2300
+ []
+
+[53]
+Underfull \vbox (badness 10000) detected at line 2300
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2300
+ []
+
+[54]
+
+! LaTeX Error: File `figs/Cmdftest' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2304 ...hics[width=0.6\linewidth]{figs/Cmdftest}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[55] [56] [57] [58] [59] [60] [61]
+Underfull \vbox (badness 1132) detected at line 2606
+ []
+
+[62] [63]
+
+! LaTeX Error: File `image/diagnosticplots' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2668 ...th=0.6\linewidth]{image/diagnosticplots}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:diagnosticplots2' on page 64 undefined on input l
+ine 2695.
+
+[64]
+
+! LaTeX Error: File `image/diagnosticplots2' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2705 ...h=0.6\linewidth]{image/diagnosticplots2}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[65]
+
+! LaTeX Error: File `image/PostHocMethodandR' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2747 ...0.95\linewidth]{image/PostHocMethodandR}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[66]
+Underfull \vbox (badness 10000) detected at line 2917
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2917
+ []
+
+[67]
+Underfull \vbox (badness 10000) detected at line 2917
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2917
+ []
+
+[68]
+Underfull \vbox (badness 10000) detected at line 2917
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2917
+ []
+
+[69]
+Underfull \vbox (badness 10000) detected at line 2917
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2917
+ []
+
+[70] [71] [72] [73] [74] [75] [76] [77] [78] [79]
+Underfull \hbox (badness 3657) in paragraph at lines 3231--3233
+[]\C70/rm/m/n/10.53937/4f / \C70/rm/m/n/10.53937/52 ™ ) ^^F \C70/rm/m/n/10.5393
+7/5e ^^C \C70/rm/m/n/10.53937/66 / \C70/rm/m/n/10.53937/4e å \C70/rm/m/n/10.539
+37/98 y \C70/rm/m/n/10.53937/52 ^^F \C70/rm/m/n/10.53937/5e ^^C \C70/rm/m/n/10.
+53937/57 (\T1/lmr/m/n/10.53937 n=1\C70/rm/m/n/10.53937/65 ˆ \C70/rm/m/n/10.5393
+7/76 Ñ \C70/rm/m/n/10.53937/72 y \C70/rm/m/n/10.53937/6b ä \C70/rm/m/n/10.53937
+/60 ≈ \C70/rm/m/n/10.53937/51 µ|\C70/rm/m/n/10.53937/30 ^^B| \T1/lmr/m/n/10.539
+37 X~ B(1,p)\C70/rm/m/n/10.53937/4e ^^N\T1/lmr/m/n/10.53937 X~
+ []
+
+[80] [81] [82]
+Underfull \hbox (badness 1742) in paragraph at lines 3348--3350
+[]\C70/rm/m/n/10.53937/82 Â \C70/rm/m/n/10.53937/66 / \C70/rm/m/n/10.53937/56 ﬁ
+ \C70/rm/m/n/10.53937/7b T\T1/lmr/m/n/10.53937 ``\C70/rm/m/n/10.53937/5d Ó\T1/l
+mr/m/n/10.53937 /\C70/rm/m/n/10.53937/4f N\T1/lmr/m/n/10.53937 ''\C70/rm/m/n/10
+.53937/76 Ñ \C70/rm/m/n/10.53937/95 Ó \C70/rm/m/n/10.53937/98 ò \C70/rm/m/n/10.
+53937/8b ° \C70/rm/m/n/10.53937/7b ó \C70/rm/m/n/10.53937/76 Ñ\T1/lmr/m/n/10.53
+937 ``\C70/rm/m/n/10.53937/62 ^^P \C70/rm/m/n/10.53937/52 ü\T1/lmr/m/n/10.53937
+ ''\C70/rm/bx/n/10.53937/81 Û \C70/rm/bx/n/10.53937/59 ^^Z \C70/rm/m/n/10.53937
+/66 /\T1/lmr/m/n/10.53937 k\C70/rm/m/n/10.53937/6b ! \C70/rm/m/n/10.53937/76 Ñ 
+\C70/rm/m/n/10.53937/69 Ç \C70/rm/m/n/10.53937/73 á|\C70/rm/m/n/10.53937/ff ^^L
+| \C70/rm/m/n/10.53937/53 s
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 3350--3351
+[]\C70/rm/m/n/10.53937/82 Â \C70/rm/m/n/10.53937/66 / \C70/rm/m/n/10.53937/56 ﬁ
+ \C70/rm/m/n/10.53937/7b T\T1/lmr/m/n/10.53937 ``\C70/rm/m/n/10.53937/4f ^^X\T1
+/lmr/m/n/10.53937 /\C70/rm/m/n/10.53937/9a ÿ\T1/lmr/m/n/10.53937 ''\C70/rm/m/n/
+10.53937/76 Ñ \C70/rm/m/n/10.53937/95 Ó \C70/rm/m/n/10.53937/98 ò \C70/rm/m/n/1
+0.53937/8b ° \C70/rm/m/n/10.53937/7b ó \C70/rm/m/n/10.53937/76 Ñ Ñ\T1/lmr/m/n/1
+0.53937 ``\C70/rm/m/n/10.53937/62 ^^P \C70/rm/m/n/10.53937/52 ü\T1/lmr/m/n/10.5
+3937 ''\C70/rm/bx/n/10.53937/81 Û \C70/rm/bx/n/10.53937/5c ^^Q \C70/rm/m/n/10.5
+3937/66 /\T1/lmr/m/n/10.53937 k\C70/rm/m/n/10.53937/6b ! \C70/rm/m/n/10.53937/7
+6 Ñ \C70/rm/m/n/10.53937/69 Ç \C70/rm/m/n/10.53937/73 á|\C70/rm/m/n/10.53937/ff
+ ^^L|
+ []
+
+[83] [84] [85] [86] [87] [88] [89] [90]
+Overfull \hbox (244.28163pt too wide) in paragraph at lines 3669--3670
+ \C70/rm/m/n/10.53937/65 p$\OML/lmm/m/it/10.53937 ^^U$\T1/lmr/m/n/10.53937 <20$
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OML/lmm/m/it/10.53937 X
+[][][][][][][]p[][][][][][][]$\T1/lmr/m/n/10.53937 p_0$|\C70/rm/m/n/10.53937/ff
+ ^^L| 
+ []
+
+[91] [92]
+
+! Package amsmath Error: \bar allowed only in math mode.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3736 ÂÖ∂‰∏≠ÁöÑ\(\bar{X_1}\)Âíå\bar\{
+                                      X\_2\}ÂàÜÂà´ÊòØ\(X_1/n_1\)Âíå\(X_2/n_2...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[93] [94] [95] [96] [97]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <15.05624> on input line 3935.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12.045> on input line 3935.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9.03374> on input line 3935.
+ [98] [99]
+
+! LaTeX Error: File `figs/chisquaredfig' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3978 ...idth=0.55\linewidth]{figs/chisquaredfig}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[100] [101]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4070 \[\chi^2=\sum{\frac{(A-T)^2}{T}} \\
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4070 \[\chi^2=\sum{\frac{(A-T)^2}{T}} \\
+                                          
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.4070 \[\chi^2=\sum{\frac{(A-T)^2}{T}} \\
+                                          
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4071 v=(Ë°åÊï∞-1)(ÂàóÊï∞-1)\]
+                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4071 v=(Ë°åÊï∞-1)(ÂàóÊï∞-1)\]
+                               
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.4071 v=(Ë°åÊï∞-1)(ÂàóÊï∞-1)\]
+                               
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+[102] [103] [104]
+Overfull \vbox (0.3901pt too high) detected at line 4240
+ []
+
+[105]
+Underfull \vbox (badness 10000) detected at line 4240
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 4240
+ []
+
+[106] [107] [108] [109]
+
+! LaTeX Error: File `image/Fisherchitest' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4382 ...idth=0.7\linewidth]{image/Fisherchitest}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[110] [111]
+Underfull \vbox (badness 10000) detected at line 4462
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 4462
+ []
+
+[112] [113]
+Underfull \hbox (badness 1997) in paragraph at lines 4511--4512
+[]\C70/rm/m/n/10.53937/59 ^^Z \C70/rm/m/n/10.53937/4e * \C70/rm/m/n/10.53937/68
+ 7 \C70/rm/m/n/10.53937/67 , \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/67 
+Ñ \C70/rm/m/n/10.53937/62 ^^P \C70/rm/m/n/10.53937/6b ‘ ‘ \C70/rm/m/n/10.53937/
+8f É \C70/rm/m/n/10.53937/4e Â \C70/rm/m/n/10.53937/53   Ã \C70/rm/m/n/10.53937
+/54 ^^Q \C70/rm/m/n/10.53937/65 ‡ \C70/rm/m/n/10.53937/5e è \C70/rm/m/n/10.5393
+7/52 ^^F \C70/rm/m/n/10.53937/7c { \C70/rm/m/n/10.53937/8d D \C70/rm/m/n/10.539
+37/65 ô \C70/rm/m/n/10.53937/51 s \C70/rm/m/n/10.53937/80 T \C70/rm/m/n/10.5393
+7/60 ' \C70/rm/m/n/10.53937/68 ¿ \C70/rm/m/n/10.53937/9a å \C70/rm/m/n/10.53937
+/65 ˆ|\C70/rm/m/n/10.53937/ff ^^L|
+ []
+
+[114] [115] [116] [117]
+Underfull \vbox (badness 10000) detected at line 4697
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 4697
+ []
+
+[118] [119] [120]
+Underfull \vbox (badness 10000) detected at line 4832
+ []
+
+
+Overfull \vbox (1.13567pt too high) detected at line 4832
+ []
+
+[121] [122] [123] [124] [125]
+Underfull \vbox (badness 10000) detected at line 5006
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 5006
+ []
+
+[126] [127] [128] [129]
+Underfull \vbox (badness 10000) detected at line 5161
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 5161
+ []
+
+[130] [131] [132]
+Underfull \vbox (badness 10000) detected at line 5270
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 5270
+ []
+
+[133] [134] [135] [136] [137] [138]
+Overfull \hbox (3.79623pt too wide) in paragraph at lines 5472--5474
+[]\C70/rm/m/n/10.53937/59 Ç \C70/rm/m/n/10.53937/67 ú$\OML/lmm/m/it/10.53937 x[
+] > m$|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/5b ˘ \C70/rm/m/n/10.53
+937/5e î \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/5b ˘$\OML/lmm/m/it/10.5
+3937 d[] > \OT1/lmr/m/n/10.53937 0$|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/it/1
+0.53937/79 È \C70/rm/m/it/10.53937/7b & \C70/rm/m/it/10.53937/53 ˜ \C70/rm/m/n/
+10.53937/4e :\T1/lmr/m/n/10.53937 1|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10
+.53937/53 s\T1/lmr/m/n/10.53937 Sgn_i=Sgn(d_i)=1 
+ []
+
+
+Overfull \hbox (3.79663pt too wide) in paragraph at lines 5474--5476
+[]\C70/rm/m/n/10.53937/59 Ç \C70/rm/m/n/10.53937/67 ú$\OML/lmm/m/it/10.53937 x[
+] \OT1/lmr/m/n/10.53937 = \OML/lmm/m/it/10.53937 m$|\C70/rm/m/n/10.53937/ff ^^L
+| \C70/rm/m/n/10.53937/5b ˘ \C70/rm/m/n/10.53937/5e î \C70/rm/m/n/10.53937/76 Ñ
+ \C70/rm/m/n/10.53937/5b ˘$\OML/lmm/m/it/10.53937 d[] \OT1/lmr/m/n/10.53937 = 0
+$|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/it/10.53937/79 È \C70/rm/m/it/10.53937
+/7b & \C70/rm/m/it/10.53937/53 ˜ \C70/rm/m/n/10.53937/4e :\T1/lmr/m/n/10.53937 
+0|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/53 s\T1/lmr/m/n/10.53937 Sg
+n_i=Sgn(d_i)=0 
+ []
+
+
+Overfull \hbox (5.55276pt too wide) in paragraph at lines 5476--5477
+[]\C70/rm/m/n/10.53937/59 Ç \C70/rm/m/n/10.53937/67 ú$\OML/lmm/m/it/10.53937 x[
+] < m$|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/5b ˘ \C70/rm/m/n/10.53
+937/5e î \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/5b ˘$\OML/lmm/m/it/10.5
+3937 d[] < \OT1/lmr/m/n/10.53937 0$|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/it/1
+0.53937/79 È \C70/rm/m/it/10.53937/7b & \C70/rm/m/it/10.53937/53 ˜ \C70/rm/m/n/
+10.53937/4e :\T1/lmr/m/n/10.53937 -1|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/1
+0.53937/53 s\T1/lmr/m/n/10.53937 Sgn_i=Sgn(d_i)=-
+ []
+
+[139] [140] [141] [142]
+Underfull \vbox (badness 10000) detected at line 5644
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 5644
+ []
+
+[143] [144] [145]
+Underfull \vbox (badness 10000) detected at line 5744
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 5744
+ []
+
+[146] [147]
+Underfull \vbox (badness 10000) detected at line 5842
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 5842
+ []
+
+[148]
+Underfull \vbox (badness 10000) detected at line 5842
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 5842
+ []
+
+[149]
+Overfull \hbox (77.2556pt too wide) in paragraph at lines 5863--5870
+ [][] 
+ []
+
+[150] [151]
+Overfull \hbox (30.9971pt too wide) in paragraph at lines 5936--5945
+ [][] 
+ []
+
+[152]
+Underfull \vbox (badness 10000) detected at line 6007
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 6007
+ []
+
+[153] [154] [155] [156] [157] [158] [159] (./MedicalStatisNotes.aux)
+
+Package rerunfilecheck Warning: File `MedicalStatisNotes.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MedicalStatisNotes.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  F296AF2ED263F99B96545EB02D3C92D6;5575.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 20084 strings out of 481332
+ 320540 string characters out of 5916428
+ 567798 words of memory out of 5000000
+ 36141 multiletter control sequences out of 15000+600000
+ 573083 words of font info for 451 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 84i,11n,87p,1236b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on MedicalStatisNotes.dvi (159 pages, 669676 bytes).
